@@ -1,11 +1,6 @@
-
 :root{
   --bg: #f5fbf7;
   --card: #ffffff;
-  /*--accent: #2fb26a;
-  --accent-2: #136a3a;
-  --accent-3: #1db3a7; 
-  */
   --accent: #8A1E1E;      /* main red */
   --accent-2: #5C0F0F;    /* darker red */
   --accent-3: #C94A4A;    /* lighter accent red */
@@ -40,10 +35,22 @@ html,body{
 
 
 section {
+
   width: 100%;
   position: relative;
   padding-bottom: 50px;   /* line ke liye space */
 }
+#hero,
+#about,
+#contact , #team {
+  min-height: 100vh;
+}
+
+#programs 
+ {
+  min-height: auto;
+}
+
 
 /* Har section ke niche ek line */
 section::after {
@@ -53,7 +60,7 @@ section::after {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: linear-gradient(to right, #0a8f3d);
+  background: linear-gradient(to right, #8A1E1E);
   opacity: 0.6;
 }
 
@@ -208,7 +215,8 @@ img, picture, .p-media {
 .hero-ctas{
   display:flex;
   gap:0.8rem;
-  margin-bottom:1rem;
+  margin-bottom:2rem;
+  margin-top: 2rem;
 }
 .big{
   padding:0.9rem 1.2rem;
@@ -269,6 +277,7 @@ img, picture, .p-media {
   grid-template-columns:1fr 420px;
   gap:1.4rem;
   align-items:center;
+  margin-top: 160px;
 }
 .bullets{
   margin-top:10px;
@@ -276,12 +285,14 @@ img, picture, .p-media {
   color:var(--muted);
 }
 .about-actions{
-  margin-top:1rem;
+  margin-top:2rem;
   display:flex;
-  gap:0.6rem;
+  gap:0.8rem;
 }
 .hero-image{
-  max-width: 400px;   
+  max-width: 400px; 
+  height: 250px;
+   
   border-radius: 15px;
   display: block;
   margin: auto;
@@ -400,6 +411,7 @@ img, picture, .p-media {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   justify-items: center; /* center each card */
+  margin-top: 100px;
 }
 
 .team-card{
@@ -423,12 +435,14 @@ img, picture, .p-media {
 /* ====CONTACT===== */
 .section-contact{
   padding-bottom:3rem;
+  
 }
 .contact-grid{
   display:grid;
   grid-template-columns:1fr 360px;
   gap:1.2rem;
   align-items:start;
+  margin-top: 50px;
 }
 .contact-form input,.contact-form textarea{
   font-family: sans-serif;
@@ -471,12 +485,14 @@ img, picture, .p-media {
   border-top:1px solid rgba(20,60,20,0.03);
   color:var(--muted);
 }
+
 .footer-grid{
   display:flex;
-  justify-content:space-between;
+  justify-content:center;   /* centered */
   align-items:center;
   gap:1rem;
 }
+
 
 /* ---------- Responsive breakpoints ---------- */
 
@@ -562,6 +578,13 @@ img, picture, .p-media {
     width:48px; 
   }
 }
+@media (max-width: 768px) {
+  /* Hide Donate + Volunteer buttons in mobile */
+  .cta-wrap .btn {
+    display: none !important;
+  }
+}
+
 
 /* ====Small screens===== */
 @media(max-width:920px){
@@ -598,6 +621,8 @@ img, picture, .p-media {
   opacity:1;
   transform:translateY(0);
 }
+
+
 
 
 
