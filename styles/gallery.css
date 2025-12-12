@@ -144,7 +144,7 @@ body {
 
 /* title header */
 .header {
-  margin: 5rem 20px;
+  margin: 5rem auto;
   margin-bottom: 2rem;
   padding: 0 20px;
   max-width: 1300px; 
@@ -174,7 +174,7 @@ body {
   display: none;
   animation: fade 0.5s;
 }
-.section-gallery .slides .slide img {
+.slide img , .slide video {
   width: 100%;
   height: 80vh;
   object-fit: cover;
@@ -201,13 +201,13 @@ body {
   background: #e5e5e5;
 }
 .thumbnail .item {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   flex-shrink: 0;
   position: relative;
 }
 /* current img of thumbnail */
-.thumbnail .item img {
+.item img , .item video {
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -222,7 +222,16 @@ body {
   transform: scale(1.15);
   border: 2px solid var(--accent-2);
 }
+.thumbnail .item video.active {
+  padding: 10px;
+  opacity: 1;
+  transform: scale(1.15);
+  border: 2px solid var(--accent-2);
+}
 .thumbnail .item img:hover {
+  opacity: 1;
+}
+.thumbnail .item video:hover {
   opacity: 1;
 }
 .arrows {
@@ -267,23 +276,7 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-}
-.card {
-  width: 300px;
-  padding: 15px;
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.card video {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
+} 
 
 /* responsive design*/
 @media (max-width: 1220px) {

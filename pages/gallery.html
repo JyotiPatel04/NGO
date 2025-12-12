@@ -37,11 +37,15 @@
           <a class="navItem" href="../index.html#programs">Programs</a>
           <a class="navItem" href="../pages/gallery.html">Gallery</a>
           <a class="navItem" href="../index.html#team">Team</a>
-          <a class="navItem" href="../index.html#contact" class="donate-btn">Contact</a>
+          <a class="navItem" href="../index.html#contact" class="donate-btn"
+            >Contact</a
+          >
         </nav>
 
         <div class="cta-wrap">
-          <a href="../pages/volunteer-form.html" class="btn navBtn ghost">Volunteer</a>
+          <a href="../pages/volunteer-form.html" class="btn navBtn ghost"
+            >Volunteer</a
+          >
           <a href="#donate" class="btn navBtn" id="donate">Donate</a>
           <a href="../pages/volunteer-form.html">
             <img
@@ -64,7 +68,7 @@
     </header>
     <!-- ======title-HEADER====== -->
     <header class="header">
-      <div class="title">  
+      <div class="title">
         <h1>Our Gallery</h1>
       </div>
     </header>
@@ -79,16 +83,33 @@
           <img src="../assets/volunteer/v2.jpg" alt="" />
         </div>
         <div class="slide">
+          <video muted loop preload="metadata">
+            <source src="../assets/volunteer/v1.3.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="slide">
           <img src="../assets/volunteer/v3.jpg" alt="" />
         </div>
         <div class="slide">
           <img src="../assets/volunteer/v4.jpg" alt="" />
         </div>
         <div class="slide">
+          <video muted loop preload="metadata">
+            <source src="../assets/volunteer/v1.5.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="slide">
           <img src="../assets/volunteer/v8.jpg" alt="" />
         </div>
         <div class="slide">
           <img src="../assets/volunteer/v11.jpg" alt="" />
+        </div>
+
+        <!-- some videos -->
+        <div class="slide">
+          <video muted loop preload="metadata">
+            <source src="../assets/volunteer/v1.1.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <div class="slide">
@@ -100,11 +121,16 @@
         <div class="slide">
           <img src="../assets/volunteer/v14.jpg" alt="" />
         </div>
+        <div class="slide">
+          <img src="../assets/volunteer/v15.jpg" alt="" />
+        </div>
       </div>
 
       <!-- Next and previous buttons -->
       <button class="arrows" id="prev" onclick="prevSlide(-1)">&#10094;</button>
-      <button class="arrows next-arrow" id="next" onclick="prevSlide(1)">&#10095;</button>
+      <button class="arrows next-arrow" id="next" onclick="prevSlide(1)">
+        &#10095;
+      </button>
 
       <!-- thumbnail -->
       <div class="thumbnail">
@@ -125,17 +151,14 @@
           />
         </div>
         <div class="item">
-          <img
-            class="currImg"
-            src="../assets/volunteer/v3.jpg"
-            alt=""
-            onclick="currThumbNail(3)"
-          />
+          <video class="currImg" muted loop onclick="currThumbNail(3)">
+            <source src="../assets/volunteer/v1.3.mp4" type="video/mp4" />
+          </video>
         </div>
         <div class="item">
           <img
             class="currImg"
-            src="../assets/volunteer/v4.jpg"
+            src="../assets/volunteer/v3.jpg"
             alt=""
             onclick="currThumbNail(4)"
           />
@@ -143,9 +166,22 @@
         <div class="item">
           <img
             class="currImg"
-            src="../assets/volunteer/v8.jpg"
+            src="../assets/volunteer/v4.jpg"
             alt=""
             onclick="currThumbNail(5)"
+          />
+        </div>
+        <div class="item">
+          <video class="currImg" muted loop onclick="currThumbNail(6)">
+            <source src="../assets/volunteer/v1.5.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v8.jpg"
+            alt=""
+            onclick="currThumbNail(7)"
           />
         </div>
 
@@ -154,15 +190,20 @@
             class="currImg"
             src="../assets/volunteer/v11.jpg"
             alt=""
-            onclick="currThumbNail(6)"
+            onclick="currThumbNail(8)"
           />
+        </div>
+        <div class="item">
+          <video class="currImg" muted loop onclick="currThumbNail(9)">
+            <source src="../assets/volunteer/v1.1.mp4" type="video/mp4" />
+          </video>
         </div>
         <div class="item">
           <img
             class="currImg"
             src="../assets/volunteer/v12.jpg"
             alt=""
-            onclick="currThumbNail(7)"
+            onclick="currThumbNail(10)"
           />
         </div>
         <div class="item">
@@ -170,7 +211,7 @@
             class="currImg"
             src="../assets/volunteer/v13.jpg"
             alt=""
-            onclick="currThumbNail(8)"
+            onclick="currThumbNail(11)"
           />
         </div>
         <div class="item">
@@ -178,12 +219,20 @@
             class="currImg"
             src="../assets/volunteer/v14.jpg"
             alt=""
-            onclick="currThumbNail(10)"
+            onclick="currThumbNail(12)"
+          />
+        </div>
+        <div class="item">
+          <img
+            class="currImg"
+            src="../assets/volunteer/v15.jpg"
+            alt=""
+            onclick="currThumbNail(13)"
           />
         </div>
       </div>
     </div>
- 
+
     <script src="../scripts/gallery.js"></script>
   </body>
 </html>

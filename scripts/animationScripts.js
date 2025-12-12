@@ -17,8 +17,19 @@ gsap.from("#about h2",{
         start:'top 85%', 
     } 
 })
-gsap.from("#programs h2",{  
+gsap.from("#achievement h2",{  
     x:-500,
+    scale:1.03,
+    duration:2, 
+    textShadow:"0 2px 14px hsla(0, 95%, 15%, 0.45)",
+    scrollTrigger:{
+        trigger:"#achievement h2",
+        scroller:'body',
+        start:'top 85%', 
+    } 
+})
+gsap.from("#programs h2",{  
+    x:500,
     scale:1.03,
     duration:2, 
     textShadow:"0 2px 14px hsla(0, 95%, 15%, 0.45)",
@@ -29,7 +40,7 @@ gsap.from("#programs h2",{
     } 
 })
 gsap.from("#team h2",{  
-    x:500,
+    x:-500,
     scale:1.03,
     duration:2, 
     textShadow:"0 2px 14px hsla(0, 95%, 15%, 0.45)",
@@ -40,7 +51,7 @@ gsap.from("#team h2",{
     } 
 })
 gsap.from("#contact h2",{  
-    x:-500,
+    x:500,
     scale:1.03,
     duration:2, 
     textShadow:"0 2px 14px hsla(0, 95%, 15%, 0.45)",
@@ -58,6 +69,28 @@ gsap.from("#about" ,{
     duration:2, 
     scrollTrigger:{
         trigger:"#about",
+        scroller:"body", 
+        start:'top 85%', 
+        end:"top 45%", 
+    }
+}) 
+gsap.from("#achievement" ,{
+    opacity:0,
+    y:100,
+    duration:2, 
+    scrollTrigger:{
+        trigger:"#achievement",
+        scroller:"body", 
+        start:'top 85%', 
+        end:"top 45%", 
+    }
+}) 
+gsap.from(".achieve-box" ,{
+    opacity:0,
+    y:100,
+    duration:2, 
+    scrollTrigger:{
+        trigger:".achieve-box",
         scroller:"body", 
         start:'top 85%', 
         end:"top 45%", 
