@@ -26,9 +26,10 @@ body {
   margin: 0;
   padding-top: 20px;
   background: linear-gradient(180deg, #f8fff9, #f5fbf7);
-  color: #0f2b22;
+  color: #0f2b22; 
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto; 
+
   position: relative;
 }
 /* responsive container */
@@ -42,8 +43,9 @@ body {
 section {
   width: 100%;
   position: relative;
-  padding-bottom: 50px; /* spaces for line */
-  min-height: 100vh;
+  padding-bottom: 50px; /* spaces for line */ 
+  min-height: 100svh; /* mobile-safe */ 
+  opacity: 1;
 }
 #home,
 #about,
