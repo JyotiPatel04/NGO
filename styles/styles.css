@@ -976,10 +976,12 @@ picture,
 /* For very small phones */
 @media screen and (max-width: 480px) {
   #backToTopBtn {
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
     bottom: 20px;
-    right: 15px;
+    right: 19px;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%; /* Makes it circular on mobile */
   }
 }
@@ -987,10 +989,10 @@ picture,
 /* For extra small devices */
 @media screen and (max-width: 360px) {
   #backToTopBtn {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     bottom: 10px;
-    right: 12px;
+    right: 16px; 
   }
 }
 
