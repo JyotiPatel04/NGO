@@ -737,18 +737,24 @@ picture,
 .section-contact {
   padding-bottom: 3rem;
 }
+.section-contact .container {
+  padding-left: 70px;          
+  margin-left: 70px;
+}
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 360px;
   gap: 1.2rem;
-  align-items: start;
   margin-top: 20px;
-  place-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  
+
 }
 .contact-form input,
 .contact-form textarea {
   font-family: sans-serif;
-  width: 100%;
+  width: 150%;
   padding: 0.8rem;
   border-radius: 10px;
   border: 1px solid #e8f3ea;
@@ -759,6 +765,13 @@ picture,
   gap: 0.6rem;
   align-items: center;
 }
+.contact-bottom {
+  display: flex;
+  gap: 6rem;
+  align-items: flex-start;
+}
+
+
 .info-card {
   background: linear-gradient(180deg, #fff, #fbfff9);
   padding: 1rem;
@@ -767,8 +780,12 @@ picture,
   box-shadow: 0 12px 30px rgba(10, 20, 10, 0.03);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.2rem;
+  text-align: left;
+  align-self: flex-start;
 }
+ 
+
 .socials a {
   display: inline-block;
   margin-right: 0.5rem;
@@ -791,6 +808,11 @@ picture,
   padding: 10px 5px;
   font-size: 1.2rem;
 }
+
+
+  
+
+
 @media (max-width: 420px) {
   .contact-grid {
     place-items: start;
@@ -824,20 +846,7 @@ picture,
   width: 90%;
 }
 
-/* contact icon btn */
-/* #contactBtn {
-  display: inline-block;
-  outline: none;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 80px;
-  right: 30px;
-  transition: all 0.3s ease;
-  z-index: 999999; 
-} */
+
 #contactBtn {
   display: inline-block;
   outline: none;
@@ -1340,3 +1349,4 @@ picture,
     transition: none !important;
   }
 }
+
