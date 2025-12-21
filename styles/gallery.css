@@ -180,7 +180,7 @@ body {
   font-weight: 700;
   margin: 20px 10px;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   color: var(--accent);
   border-radius: 10px;
 }
